@@ -1,0 +1,280 @@
+#+TITLE: Como instalar Windows 10 AME
+#+AUTHOR: Lin Diniz
+#+LAYOUT: post
+#+TAGS: hexo, org-mode
+#+DATE: <2020-12-17 Thu 11:45>
+#+LATEX_HEADER_EXTRA:  \usepackage{mdframed}
+#+LATEX_HEADER_EXTRA: \BeforeBeginEnvironment{minted}{\begin{mdframed}}
+#+LATEX_HEADER_EXTRA: \AfterEndEnvironment{minted}{\end{mdframed}}
+* Passo a Passo
+** Introdução
+***  *O que e windows ame?*
+ windows ame e uma versão modificada do windows 10 que
+ permite ao usuário remover toda caca do sistema operacional
+
+*** *Por que usar o windows ame?*
+Alem de você Poder desfrutar de um sistema leve sem nenhuma caca da microsoft
+,você acaba removendo todos os SpyWare do sistema mais os bloatware que pesam o sistema sem motivo
+** Baixando a iso
+Primeiro temos que baixar o sistema DIRETAMENTE da microsoft
+para fazer isso utilize  [[https://tb.rg-adguard.net/public.php][Este Link]] para baixar la direto dos
+servidores da empresa do tio bio gades
+Exemplo:
+[[/img/iso.png]]
+*** Como escolher a iso corretamente:
+certifique-se de escolher sua linguá agora, neste exato moimento porque
+depois não há maneira fácil de mudar, depois escolha arquitetura, e por
+ultimo selecione a versão mais recente que na data deste vídeo é a 2004 ou
+20H2
+*** Como Verificar a hash da iso
+Primeiro baixe o programa sha1sum do *pacote da descrição*, depois coloque-o na
+mesma pasta da sua iso, aperte SHIFT + BUTAO DIREITO na parte branca e
+selecione abir powershell ou cmd, depois escreva *~sha1sum.exe
+nomedaiso.iso~*
+copie a sequencia de numeros e letras e cole no site que estarei deixando
+novame      nte na descrição do vídeo, cole a hash e verifique que a iso e genuina
+** Baixando atualizacoes
+*** Aviso
+Essa versão que iremos criar vamos remover componentes ao esstremo, sendo
+necessario remover o windows update, nao se preucupe ainda podera baixar
+updates offline e instalar-los pelo powershell
+*** Baixando arquivos necessarios
+**** Baixando scripts
+Entre [[https://wiki.ameliorated.info/doku.php?id=documentation_2004#download_amelioration_scripts][Neste Link]]
+E clique nesse butão:
+[[/img/7UZ2rno.png]]
+
+**** Baixando atualizacoes no site da microsoft
+[[/img/yIgv99C.png]]
++ Acesse [[https://support.microsoft.com/en-us/help/4555932/windows-10-update-history][Esse-Link]]
+
+
+e Selecione a primeiro link em In this Release
+[[/img/WiSssrF.png]]
++ Copie o codigo Ex:*KB4580364*
+[[/img/zF70Hfj.png]]
++  Cole o codigo que acabou de conseguir
+[[https://www.catalog.update.microsoft.com/Home.aspx][Neste Link]]
+[[/img/PMNacqF.png]]
+Selecione o pacote de atualizacao de acordo com arquitetura e versão do
+windows *Nao selecione versão windows server*
+
++ Agora Volte para o site anterior e desca ate esta parte:
+[[/img/xzHGKxQ.png]]
++ Copie o codigo e baixe da mesma forma que baixou as atualizacoes anteriores
+*** Baixando o Pactote
+O pacote pode ser encontrado na descrição ou nesse link
+extaia-o junto com os outros arquivos
+*** Baixando uma Iso Linux
+[[/img/ffyjwhA.png]]
+Voce pode baixar uma iso de sua escolha
+(*Distros baseadas em Debian Funcionam melhor*)
+Estarei baixando a iso do Linux mint que pode ser baixada via torrent ou pelo
+espelho localizado no Brasil (Asiim o Download fica mais rapido)
+
+Seus arquivos devem estar assim:
+** Queimando Imagem num pendrive
+Utilizaremos o Programa Rufus para queimar a imagem em um pendrive (*Ele
+esta incluido no pacote da descrição*)
+[[/img/xmI7MIe.png]]
+*** Copiando arquvos para o pendrive
+Copie os arquivos de instalação para a raiz do pendrive, incluindo
+atualizacoes e o script
+** Instalando o windows
+De boot pelo pendrive e chegue nessa nela:
+[[/img/eHoWjo1.png]]
+*nota:* Todo sitema e diferente o importante e que chegue na tela acima
+[[/img/9CD8rrx.png]]
+Selecione a versão de sua escolha recomendo que escolha a Pro
+*Se essa tela não aparecer, não se preucupe, significa que seu disposivo só*
+*suporta  um tipo de versão do windows entao siga em frente*
+[[/img/LQqCuKs.png]]
+Aceite seus termos e venda sua alma e de seus filhos a microsoft
+[[/img/VuSUqGp.png]]
+Quando aparecer essa tela só clique em *Não tenho a chave do produto*
+[[/img/Abr5P3Z.png]]
+*Nessa tela Selecione personalizado*
+[[/img/eGaIjiA.png]]
+Agora é hora de fazer as partiçoes se houver alguma *Bem provavel ter* exclua
+tudo, depois clique na que ficar e clique em novo, deve ficar mais ou menos
+assim:
+[[/img/r1RCTJs.png]]
+Se houver 4 partiçoes significa que seu sistema e UEFI, não se preucupe só
+siga em frente
+[[/img/pbJYsqt.png]]
+Vá pegar sua bebida favorita porque isso demorará bastante tempo
+*Não conecte a Internet*
+*Não conecte a Internet*
+*Não conecte a Internet*
+** Removendo ícones da areá de trabalho
+Agora vamos remover tudo que é desnecessário na barra de tarefas e no menu
+iniciar como e mostrado na imagem a seguir:
+[[/img/3Hkg4ll.png]]
+Primeiro removemos icones da brra de tarefas assim como mostrado a seguir:
+[[/img/69F0aTs.png]]
+Isso pode ser feito clicando com o botão direito na mesma e removendo um por
+um como é mostrado nas imagens a seguir:
+[[/img/i4cxpJ4.png]]
+[[/img/n2kmihY.png]]
+Agora remova todos aplicativos inuteis do menu iniciar
+[[/img/gygPKa5.png]]
+Pronto o resultado final desse processo de remoção, deve ficar mais ou menos
+assim:
+[[/img/MCqmMy2.png]]
+Remova a barra de busca e ícones desnecessários, precisamos fazer isso agora
+
+porque depois da purificação talvez não seja possível remover los
+** Instalando e extraindo atualizacoes
+Crie Duas pastas no disco C: como indicado na figura:
+[[/img/6cylokn.png]]
+Copie os arquivos de atualizacao para o disco C: e renomei-os como na figura
+acima.
+*Renomeando o Cumulativo para Cumulativo e o SSU para SSU*
+*** Extraindo atualizacoes
+Abra o powershell como adminstrador clicaando com o butao direito no icone do
+windows na barra de tarefas e selecionando
+*Powershell Adminstador*
+Escreva:
+#+BEGIN_mdframed
+cd C:
+#+END_mdframed
+E de ENTER
+**** Extraindo SSU
+[[/img/hxkKVS5.png]]
+Após a etapa anterior rode este comando para extrair o SSU como demonstrado
+na imagem acima
+#+BEGIN_mdframed
+expand -F:* SSU.MSU SSU
+#+END_mdframed
+**** Extraindo update Cumulativo
+[[/img/sZjZfZV.png]]
+Faça o mesmo do que a etapa anterior so e mudado o comando:
+#+BEGIN_mdframed
+expand -F:* Cumulativo.MSU Cumulative
+#+END_mdframed
+      *** Instalando atualizacoes
+**** Instalando SSU
+De o seguinte comando para entrar na pasta do SSU extraido
+#+BEGIN_mdframed
+cd C:\SSU
+#+END_mdframed
+Depois e necessario listar os arquivos na pasta para isso use:
+#+BEGIN_mdframed
+ls
+#+END_mdframed
+Ache o arquivo de instalação o seu talvez esteja diferente o meu e o
+seguinte:
+#+BEGIN_mdframed
+Windows10,0-KB577266-x64.cab
+#+END_mdframed
+[[/img/MExF4Hu.png]]
+Depois de o comando a seguir para instalar o SSU
+#+BEGIN_mdframed
+dism /online /add-package /packagepath=C:\SSU\Windows10.0-KB577266-x64.cab
+#+END_mdframed
+*Atenção troque o nome do arquivo no comando acima para o nome do SEU*
+*arquivo*
+*Quando terminal instalação só reinicie o computador*
+Lembrando:
+*Não conecte a Internet*
+*Não conecte a Internet*
+*Não conecte a Internet*
+**** Instalando update cumulativo
+
+De o seguinte comando para entrar na pasta do SSU extraido
+#+BEGIN_mdframed
+cd C:\Cumulative
+#+END_mdframed
+Depois e necessario listar os arquivos na pasta para isso use:
+#+BEGIN_mdframed
+ls
+#+END_mdframed
+Ache o arquivo de instalação o seu talvez esteja diferente o meu e o
+seguinte:
+#+BEGIN_mdframed
+Windows10.0-KB4580364-x64_PSFX.cab
+#+END_mdframed
+[[/img/7UFnhF4.png]]
+Depois de o comando a seguir para instalar o SSU
+#+BEGIN_mdframed
+dism /online /add-package /packagepath=C:\SSU\...x64-PSFX.cab
+#+END_mdframed
+*Atenção troque o nome do arquivo no comando acima para o nome do SEU*
+*arquivo*
+*Quando terminal instalação só reinicie o computador DUAS VEZES*
+Lembrando:
+*Não conecte a Internet*
+*Não conecte a Internet*
+*Não conecte a Internet*
+      *
+** Rodando Script de purificacao
+Copie de um pendrive o script (*scripts/BATCH/amelioration_2004.bat*)para area de trababalho e execute como
+adminstrador, selecione 1 e aguarde pois o script irá remover tudo que e
+desnecessário do windows como mostra as imagens a seguir:
+[[/img/5yoRVoE.png]]
+[[/img/vgGfeai.png]]
+Nessa tela é necessario plugar seu pendrive no computador e escolher sua
+letra no script como mostra acima
+Após dar enter vai estar na tela onde o script vai estar purificando seu
+sistema, mais ou menos assim:
+[[/img/0xvlTrg.png]]
+*** Modifciando permissões de usuário
+Essa etapa é opcional que mostra como deixar o windows seguro colocando uma
+senha na hora de rodar um programa como adminstrador
+Para seguir esta etapa assita o vídeo pois e bem complicada
+e necessita de Atenção pois você pode perder acesso ao seu sistema
+[[/img/HDxfGnV.png]]
+** Linux
+*Não pule essa etapa pois se não o windows update vai reinstalar tudo denovo*
+Entre no linux (no meu caso linux mint)
+[[/img/MfukU2Y.png]]
+Clique duas vezes no seu hd e clique com o butão direito na area branca e
+selecione abrir terminal aki
+**** Baixando e convertendo o script
+Vá para [[https://wiki.ameliorated.info/doku.php?id=documentation_2004#run_ameliorate_script_linux_required][Este link]]
+De os seguintes comandos:
+#+BEGIN_mdframed
+sudo su
+#+END_mdframed
+[[/img/6eRqFFi.png]]
+*para rodar os resto dos comandos a seguir*
+#+BEGIN_mdframed
+apt install dos2unix
+#+END_mdframed
+[[/img/ZWM46U3.png]]
+*para converter o scirpt para rodar no seu hd do windows*
+***** Copiando script para seu hd no linux
+Copie o (*scripts/BASH/ameliorate_2004.sh*)
+no linux mint para a raiz do seu hd no linux
+*é so arrastar como mostra nessa imagem*
+[[/img/dsB9swU.png]]
+**** Continuando
+#+BEGIN_mdframed
+dos2unix nomedoarquivo
+#+END_mdframed
+*para converter o srcript, se não ele não roda em partiçoes windows*
+#+BEGIN_mdframed
+./script.sh
+#+END_mdframed
+*rodar o script*
+**** Executando o script
+Voce chegará nessa janela:
+[[/img/fou31dN.png]]
+Aperte ENTER até ele começar e colocar comandos na tela sozinho,
+algo parecido com isso:
+
+Lembre-se que irá demorar um tempão
+
+*Depois reinicie*
+*Agora você pode se conectar a internet*
+*Agora você pode se conectar a internet*
+*Agora você pode se conectar a internet*
+*Agora você pode se conectar a internet*
+*e deve*
+
+** Finalizando
+Por ultimo abra o scirpt novamente como admin e aperte *2*
+[[/img/uCD5vcn.png]]
+espere todos os aplicativos serem instalados e
+*Reinicie o computador*
+*Pronto, agora voce tem um sistema exuto sem nenhuma babaquice da microsoft*
