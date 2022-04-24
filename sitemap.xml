@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://fnxln.com/</loc>
+    <loc>https://blog.fnxln.com/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://fnxln.com/posts/</loc>
+    <loc>https://blog.fnxln.com/posts/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://fnxln.com/posts/runit/</loc>
+    <loc>https://blog.fnxln.com/posts/runit/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://fnxln.com/about/</loc>
+    <loc>https://blog.fnxln.com/about/</loc>
   </url><url>
-    <loc>http://fnxln.com/categories/</loc>
+    <loc>https://blog.fnxln.com/categories/</loc>
   </url><url>
-    <loc>http://fnxln.com/search/</loc>
+    <loc>https://blog.fnxln.com/search/</loc>
   </url><url>
-    <loc>http://fnxln.com/tags/</loc>
+    <loc>https://blog.fnxln.com/tags/</loc>
   </url>
 </urlset>
