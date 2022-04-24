@@ -1,6 +1,6 @@
 baseURL: https://blog.fnxln.com
 languageCode: pt-BR
-title: Lin's Personal Blog
+title: Phoenix Lin Blog
 theme: PaperMod
 enableRobotsTXT: true
 buildDrafts: false
