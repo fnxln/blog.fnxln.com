@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Lin&#39;s Personal Blog</title>
+    <link>http://fnxln.com/posts/</link>
+    <description>Recent content in Posts on Lin&#39;s Personal Blog</description>
+    <image>
+      <url>http://fnxln.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://fnxln.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://fnxln.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Runit</title>
+      <link>http://fnxln.com/posts/runit/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://fnxln.com/posts/runit/</guid>
+      <description>O que é runit  runit é um esquema init para sistemas operacionais do tipo Unix que inicializa, supervisiona e termina processos em todo o sistema operacional.
+  Como usar essa bagaça  Habilitando um serviço  antes de subir um serviço é necessario habilitar-lo para que possa ativar no momento do boot e que possa ser gerenciado pelo comando sv, para habilitar um serviço com runit dê</description>
+    </item>
+    
+  </channel>
+</rss>
