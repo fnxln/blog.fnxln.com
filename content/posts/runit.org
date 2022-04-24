@@ -1,0 +1,57 @@
+---
+title: "Runit"
+date: 2021-01-07 
+draft: false 
+---
+
+* O que é runit
+runit é um esquema init para sistemas operacionais do tipo Unix que inicializa, supervisiona e termina processos em todo o sistema operacional.
+* Como usar essa bagaça
+** Habilitando um serviço
+antes de subir um serviço é necessario habilitar-lo para que possa ativar no momento do boot e que possa ser gerenciado pelo comando sv, para habilitar um serviço com runit dê
+#+begin_src shell
+ln -s /etc/runit/sv/<Nome Do Serviço> /run/runit/service
+#+end_src
+** Controlando o serviço
++ para inicia-lo *Nota: quando o serviço for habilitado ele inicia automaticamente*
+  #+begin_src shell
+sv start <Nome Do Serviço>
+  #+end_src
++ para para-lo
+  #+begin_src shell
+sv stop <Nome Do Serviço>
+  #+end_src
++ para verificar o status do mesmo
+  #+begin_src shell
+sv status <Nome Do Serviço>
+  #+end_src
++ para reiniciar-lo
+  #+begin_src shell
+sv restart <Nome Do Serviço>
+  #+end_src
+*** Desabilitando serviço no boot
+Para desabilitar um acesso no boot simplesmente crie um arquivo chamado *down* na pasta do programa em questão, exemplo:
+#+begin_src shell
+ touch /etc/runit/sv/<Nome Do Serviço>/down
+#+end_src
+** Monitrando o sistema
+*** Ver o status de todos os serviços
+#+begin_src shell
+sv status /var/service/*
+#+end_src
+*** Vendo árvore de inicialização
+Primeiro instale o comando tree do seu gerenciador de pacotes e então
+#+begin_src shell
+tree /etc/runit/sv/servicedir
+#+end_src
+Você verá um output semelhante à:
+#+begin_src shell
+ servicedir
+ ├── run (755)
+ ├── check (755)
+ ├── conf (644)
+ ├── finish (755)
+ └── log (directory)
+     ├── config (644)
+     └── run (755)
+#+end_src

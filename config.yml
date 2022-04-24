@@ -1,0 +1,123 @@
+baseURL: http://fnxln.com
+languageCode: pt-BR
+title: Lin's Personal Blog
+theme: PaperMod
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  mainSections: posts
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "img/pic.jpeg"
+    favicon16x16: "img/pic.jpeg"
+    favicon32x32: "img/pic.jpeg"
+    apple_touch_icon: "img/pic.jpeg"
+    safari_pinned_tab: "img/pic.jpeg"
+
+  label:
+    text: "Home"
+    icon: /img/pic.jpeg
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: 林(Lin) Vieira Diniz 
+    subtitle: "Nǐ hǎo, me chamo 林(Lin) sou estudante de T.I na Unp, Bem Vindo! 💜"
+    imageUrl: "img/pic.jpeg"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Bem-vido(a) ao blog da Lin  \U0001F44B"
+    Content:
+
+  socialIcons:
+    # - name: 
+    #   url: "https://twitter.com/"
+    # - name: stackoverflow
+    #   url: "https://stackoverflow.com"
+    - name: email
+      url: "mailto:lin@fnxln.com"
+    - name: github
+      url: "https://github.com/fnxln"
+    - name: rss
+      url: "/index.xml" 
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts
+      weight: 1
+    # - identifier: guides
+    #   name: Guides
+    #   url: /guides
+      weight: 2
+    - identifier: about
+      name: About
+      url: /about
+      weight: 5
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 6
