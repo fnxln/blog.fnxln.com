@@ -8,9 +8,10 @@ showToc: true
 
 # Sobre Mim
 
-{{< figure src="/opengraph.png#floatleft" align="center" style="border-radius: 8px;" >}}
 
 Meu nome é Lin (林), sou uma mulher trans e meus pronomes são (Ela/Dela) 
+
+{{< figure src="/opengraph.gif#floatleft" align="center" style="border-radius: 8px;" >}}
 
 Atualmente estou estudando no curso: (Redes de computadores) na Universidade Potiguar
 
